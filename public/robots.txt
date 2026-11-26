@@ -1,0 +1,17 @@
+User-agent: *
+Allow: /
+Disallow: /app/
+Disallow: /book/
+Disallow: /booking/
+Disallow: /payment/
+Disallow: /operator/
+Disallow: /mechanic/
+Disallow: /admin/
+Disallow: /login
+Disallow: /register$
+Disallow: /register/operator
+Disallow: /forgot-password
+Disallow: /reset-password
+Disallow: /verify-email
+
+Sitemap: https://evnaija.ng/sitemap.xml

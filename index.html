@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#071B22" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    <meta http-equiv="Permissions-Policy" content="geolocation=(), microphone=(), camera=()" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="EV Naija" />
+    <link rel="preload" href="/fonts/bricolage-latin.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/fonts/onest-latin.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/fonts/jetbrains-latin.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/videos/hero-poster.jpg" as="image" fetchpriority="high" />
+    <title>EV Naija — EV Charging Stations &amp; EV Mechanics in Nigeria</title>
+    <link rel="canonical" href="https://evnaija.ng/" />
+    <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />
+    <style>
+      /* Boot splash: painted before any JS/CSS bundle arrives so the first
+         frame is on-brand instead of a white screen. Removed on app mount. */
+      #boot-splash {
+        position: fixed;
+        inset: 0;
+        z-index: 9999;
+        display: grid;
+        place-items: center;
+        background: #041217;
+        font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+        transition: opacity 0.35s ease;
+      }
+      #boot-splash[data-hidden='true'] {
+        opacity: 0;
+        pointer-events: none;
+      }
+      .boot-splash__inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 18px;
+      }
+      .boot-splash__mark {
+        width: 64px;
+        height: 64px;
+        border-radius: 18px;
+        animation: boot-pulse 1.6s ease-in-out infinite;
+      }
+      .boot-splash__word {
+        font-size: 20px;
+        font-weight: 600;
+        letter-spacing: -0.03em;
+        color: #ffffff;
+      }
+      .boot-splash__word span {
+        color: #c6f36a;
+      }
+      .boot-splash__bar {
+        width: 132px;
+        height: 3px;
+        border-radius: 999px;
+        overflow: hidden;
+        background: rgba(255, 255, 255, 0.12);
+      }
+      .boot-splash__bar::after {
+        content: '';
+        display: block;
+        width: 40%;
+        height: 100%;
+        border-radius: inherit;
+        background: #c6f36a;
+        animation: boot-slide 1.2s ease-in-out infinite;
+      }
+      @keyframes boot-pulse {
+        0%, 100% { transform: scale(1); opacity: 1; }
+        50% { transform: scale(0.92); opacity: 0.85; }
+      }
+      @keyframes boot-slide {
+        0% { transform: translateX(-110%); }
+        100% { transform: translateX(360%); }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        .boot-splash__mark, .boot-splash__bar::after { animation: none; }
+      }
+    </style>
+    <meta
+      name="description"
+      content="Find verified EV charging stations across Lagos, Abuja and Port Harcourt, reserve a charger and connect with trusted EV mechanics across Nigeria."
+    />
+    <meta property="og:title" content="EV Naija — EV Charging Stations &amp; EV Mechanics in Nigeria" />
+    <meta
+      property="og:description"
+      content="Find verified EV charging stations across Lagos, Abuja and Port Harcourt, reserve a charger and connect with trusted EV mechanics across Nigeria."
+    />
+    <meta property="og:url" content="https://evnaija.ng/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="EV Naija" />
+    <meta property="og:locale" content="en_NG" />
+    <meta property="og:image" content="/og-image.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="EV Naija — Power your journey. Charge without limits." />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="EV Naija — EV Charging Stations &amp; EV Mechanics in Nigeria" />
+    <meta name="twitter:description" content="Find verified EV charging stations across Lagos, Abuja and Port Harcourt, reserve a charger and connect with trusted EV mechanics across Nigeria." />
+    <meta name="twitter:image" content="/og-image.jpg" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <div id="boot-splash" role="status" aria-label="Loading EV Naija">
+      <div class="boot-splash__inner">
+        <svg class="boot-splash__mark" viewBox="0 0 64 64" aria-hidden="true">
+          <rect width="64" height="64" rx="16" fill="#071B22" />
+          <path d="M35 7 17 36h13l-3 21 20-31H34l1-19Z" fill="#C6F36A" />
+        </svg>
+        <p class="boot-splash__word">EV <span>Naija</span></p>
+        <div class="boot-splash__bar"></div>
+      </div>
+    </div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

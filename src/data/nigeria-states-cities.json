@@ -1,0 +1,187 @@
+[
+  {
+    "state": "Abia",
+    "capital": "Umuahia",
+    "cities": ["Umuahia", "Aba", "Arochukwu", "Ohafia", "Bende", "Isuikwuato", "Uzuakoli", "Abiriba", "Akwete", "Azumini", "Item", "Igbere", "Nkporo", "Alayi"]
+  },
+  {
+    "state": "Adamawa",
+    "capital": "Yola",
+    "cities": ["Yola", "Jimeta", "Mubi", "Numan", "Ganye", "Guyuk", "Hong", "Michika", "Madagali", "Mayo-Belwa", "Shelleng", "Song", "Toungo", "Girei", "Fufore", "Demsa", "Lamurde"]
+  },
+  {
+    "state": "Akwa Ibom",
+    "capital": "Uyo",
+    "cities": ["Uyo", "Eket", "Ikot Ekpene", "Oron", "Ikot Abasi", "Itu", "Etinan", "Abak", "Ikono", "Ini", "Mkpat Enin", "Nsit Ubium", "Okobo", "Onna", "Esit Eket", "Ibeno", "Uruan", "Ukanafun", "Oruk Anam", "Etim Ekpo", "Obot Akara", "Essien Udim"]
+  },
+  {
+    "state": "Anambra",
+    "capital": "Awka",
+    "cities": ["Awka", "Onitsha", "Nnewi", "Ekwulobia", "Ihiala", "Nkpor", "Obosi", "Ogidi", "Agulu", "Umunze", "Nteje", "Atani", "Otuocha", "Abagana", "Nimo", "Enugwu-Ukwu"]
+  },
+  {
+    "state": "Bauchi",
+    "capital": "Bauchi",
+    "cities": ["Bauchi", "Azare", "Misau", "Jama'are", "Katagum", "Ningi", "Tafawa Balewa", "Dass", "Bogoro", "Alkaleri", "Darazo", "Gamawa", "Ganjuwa", "Giade", "Itas/Gadau", "Kirfi", "Shira", "Toro", "Warji", "Zaki"]
+  },
+  {
+    "state": "Bayelsa",
+    "capital": "Yenagoa",
+    "cities": ["Yenagoa", "Ogbia", "Brass", "Nembe", "Sagbama", "Ekeremor", "Amassoma", "Kaiama", "Odi", "Twon-Brass"]
+  },
+  {
+    "state": "Benue",
+    "capital": "Makurdi",
+    "cities": ["Makurdi", "Gboko", "Otukpo", "Katsina-Ala", "Vandeikya", "Adikpo", "Zaki Biam", "Aliade", "Ugbokpo", "Oju", "Okpoga", "Igumale", "Wanune", "Lessel"]
+  },
+  {
+    "state": "Borno",
+    "capital": "Maiduguri",
+    "cities": ["Maiduguri", "Biu", "Bama", "Dikwa", "Gwoza", "Konduga", "Monguno", "Ngala", "Rann", "Shani", "Askira/Uba", "Chibok", "Damboa", "Hawul", "Jere", "Kaga", "Kukawa", "Mafa", "Magumeri", "Marte", "Mobbar", "Nganzai"]
+  },
+  {
+    "state": "Cross River",
+    "capital": "Calabar",
+    "cities": ["Calabar", "Ugep", "Ogoja", "Ikom", "Obudu", "Obanliku", "Akamkpa", "Akpabuyo", "Bakassi", "Bekwarra", "Biase", "Boki", "Etung", "Yala", "Abi", "Obubra"]
+  },
+  {
+    "state": "Delta",
+    "capital": "Asaba",
+    "cities": ["Asaba", "Warri", "Sapele", "Ughelli", "Agbor", "Abraka", "Kwale", "Oleh", "Ozoro", "Oghara", "Koko", "Burutu", "Bomadi", "Patani", "Isiokolo", "Ogwashi-Uku", "Ibusa"]
+  },
+  {
+    "state": "Ebonyi",
+    "capital": "Abakaliki",
+    "cities": ["Abakaliki", "Afikpo", "Onueke", "Ezza", "Ishieke", "Uburu", "Okposi", "Amasiri", "Edda", "Izi", "Ikwo", "Ohaozara", "Onicha"]
+  },
+  {
+    "state": "Edo",
+    "capital": "Benin City",
+    "cities": ["Benin City", "Auchi", "Ekpoma", "Irrua", "Uromi", "Igueben", "Sabongida-Ora", "Igarra", "Fugar", "Agenebode", "Ubiaja", "Ewu"]
+  },
+  {
+    "state": "Ekiti",
+    "capital": "Ado-Ekiti",
+    "cities": ["Ado-Ekiti", "Ikere-Ekiti", "Ijero-Ekiti", "Ikole-Ekiti", "Omuo-Ekiti", "Emure-Ekiti", "Efon-Alaaye", "Aramoko-Ekiti", "Ise-Ekiti", "Ode-Ekiti", "Otun-Ekiti", "Ifaki-Ekiti", "Ido-Ekiti", "Iyin-Ekiti", "Igede-Ekiti", "Ayede-Ekiti"]
+  },
+  {
+    "state": "Enugu",
+    "capital": "Enugu",
+    "cities": ["Enugu", "Nsukka", "Oji River", "Awgu", "Udi", "Agbani", "Emene", "Nkwo Nike", "Obolo-Afor", "Uwani", "Abakpa"]
+  },
+  {
+    "state": "FCT",
+    "capital": "Abuja",
+    "cities": ["Abuja", "Gwagwalada", "Kuje", "Abaji", "Bwari", "Kwali", "Nyanya", "Karu", "Lugbe", "Kubwa", "Zuba", "Jikwoyi", "Orozo", "Wuse", "Maitama", "Asokoro", "Garki", "Gwarinpa", "Jabi", "Life Camp", "Apo", "Gudu"]
+  },
+  {
+    "state": "Gombe",
+    "capital": "Gombe",
+    "cities": ["Gombe", "Kaltungo", "Billiri", "Bajoga", "Dukku", "Nafada", "Deba", "Kwami", "Funakaye", "Akko", "Balanga", "Shongom"]
+  },
+  {
+    "state": "Imo",
+    "capital": "Owerri",
+    "cities": ["Owerri", "Orlu", "Okigwe", "Mbaise", "Oguta", "Mgbidi", "Nkwerre", "Emekuku", "Ihiagwa", "Ngor Okpala", "Ohaji/Egbema", "Oru", "Ideato", "Isu", "Njaba", "Nwangele", "Onuimo", "Ahiazu", "Ezinihitte", "Aboh Mbaise", "Ikeduru", "Mbaitoli"]
+  },
+  {
+    "state": "Jigawa",
+    "capital": "Dutse",
+    "cities": ["Dutse", "Hadejia", "Gumel", "Birnin Kudu", "Kazaure", "Ringim", "Jahun", "Auyo", "Babura", "Birniwa", "Buji", "Gagarawa", "Garki", "Guri", "Gwaram", "Gwiwa", "Kaugama", "Kiri Kasama", "Maigatari", "Malam Madori", "Miga", "Roni", "Sule Tankarkar", "Taura", "Yankwashi"]
+  },
+  {
+    "state": "Kaduna",
+    "capital": "Kaduna",
+    "cities": ["Kaduna", "Zaria", "Kafanchan", "Zonkwa", "Kagoro", "Samaru", "Sabon Gari", "Barnawa", "Rigasa", "Saminaka", "Kwoi", "Kachia", "Jema'a", "Birnin Gwari", "Chikun", "Giwa", "Igabi", "Ikara", "Jaba", "Kaura", "Kajuru", "Kubau", "Kudan", "Lere", "Makarfi", "Sanga", "Soba", "Zangon Kataf"]
+  },
+  {
+    "state": "Kano",
+    "capital": "Kano",
+    "cities": ["Kano", "Wudil", "Gaya", "Dambatta", "Rano", "Bichi", "Kura", "Dawakin Kudu", "Dawakin Tofa", "Ungogo", "Fagge", "Dala", "Gwale", "Nassarawa", "Tarauni", "Kumbotso", "Karaye", "Gwarzo", "Kabo", "Madobi", "Makoda", "Minjibir", "Rimin Gado", "Rogo", "Shanono", "Sumaila", "Takai", "Tofa", "Tsanyawa", "Tudun Wada", "Warawa"]
+  },
+  {
+    "state": "Katsina",
+    "capital": "Katsina",
+    "cities": ["Katsina", "Daura", "Funtua", "Malumfashi", "Dutsin-Ma", "Bakori", "Kankia", "Musawa", "Zango", "Jibia", "Batsari", "Safana", "Dan Musa", "Dandume", "Faskari", "Ingawa", "Kafur", "Kaita", "Kurfi", "Kusada", "Mashi", "Matazu", "Rimi", "Sabuwa", "Sandamu"]
+  },
+  {
+    "state": "Kebbi",
+    "capital": "Birnin Kebbi",
+    "cities": ["Birnin Kebbi", "Argungu", "Yauri", "Zuru", "Jega", "Bagudo", "Bunza", "Dandi", "Fakai", "Gwandu", "Kalgo", "Koko/Besse", "Maiyama", "Ngaski", "Sakaba", "Shanga", "Suru", "Wasagu/Danko", "Aleiro", "Arewa Dandi", "Augie"]
+  },
+  {
+    "state": "Kogi",
+    "capital": "Lokoja",
+    "cities": ["Lokoja", "Idah", "Okene", "Kabba", "Ankpa", "Anyigba", "Ajaokuta", "Ogaminana", "Okpo", "Isanlu", "Mopa", "Egbe", "Ogori", "Adavi", "Bassa", "Dekina", "Ibaji", "Ijumu", "Igalamela-Odolu", "Koton Karfe", "Mopa-Muro", "Ofu", "Okehi", "Olamaboro", "Omala", "Yagba East", "Yagba West"]
+  },
+  {
+    "state": "Kwara",
+    "capital": "Ilorin",
+    "cities": ["Ilorin", "Offa", "Erin-Ile", "Patigi", "Kaiama", "Jebba", "Omu-Aran", "Isanlu-Isin", "Ijagbo", "Share", "Bacita", "Lafiagi", "Afon", "Oke-Onigbin", "Eruku", "Osi", "Arandun", "Oro", "Ajase-Ipo"]
+  },
+  {
+    "state": "Lagos",
+    "capital": "Ikeja",
+    "cities": ["Lagos", "Ikeja", "Victoria Island", "Lekki", "Ikoyi", "Yaba", "Surulere", "Mushin", "Oshodi", "Isolo", "Agege", "Alimosho", "Ipaja", "Ikorodu", "Epe", "Badagry", "Ojo", "Amuwo-Odofin", "Apapa", "Ajeromi-Ifelodun", "Eti-Osa", "Ifako-Ijaiye", "Kosofe", "Lagos Island", "Lagos Mainland", "Shomolu", "Ibeju-Lekki", "Festac", "Ajah", "Gbagada", "Magodo", "Ogba", "Ikotun", "Ejigbo", "Idimu", "Igando", "Iba", "Ijanikin"]
+  },
+  {
+    "state": "Nasarawa",
+    "capital": "Lafia",
+    "cities": ["Lafia", "Keffi", "Akwanga", "Nasarawa", "Karu", "Mararaba", "Masaka", "Obi", "Awe", "Doma", "Kokona", "Nasarawa Egon", "Toto", "Wamba", "Keana"]
+  },
+  {
+    "state": "Niger",
+    "capital": "Minna",
+    "cities": ["Minna", "Bida", "Suleja", "Kontagora", "Lapai", "Agaie", "Mokwa", "New Bussa", "Kuta", "Zungeru", "Tegina", "Rijau", "Wushishi", "Mashegu", "Magama", "Mariga", "Agwara", "Borgu", "Bosso", "Chanchaga", "Edati", "Gbako", "Gurara", "Katcha", "Lavun", "Paikoro", "Rafi", "Shiroro", "Tafa"]
+  },
+  {
+    "state": "Ogun",
+    "capital": "Abeokuta",
+    "cities": ["Abeokuta", "Sagamu", "Ijebu-Ode", "Ota", "Ilaro", "Ijebu-Igbo", "Ago-Iwoye", "Ayetoro", "Ifo", "Owode", "Mowe", "Ibafo", "Ogijo", "Imeko", "Idi-Iroko", "Isara", "Iperu", "Ilishan-Remo", "Ikenne", "Odeda", "Obafemi-Owode", "Ewekoro", "Ado-Odo/Ota", "Ijebu North", "Ijebu East", "Remo North"]
+  },
+  {
+    "state": "Ondo",
+    "capital": "Akure",
+    "cities": ["Akure", "Ondo City", "Owo", "Ikare-Akoko", "Oka-Akoko", "Okitipupa", "Ile-Oluji", "Igbokoda", "Ore", "Iju", "Akungba-Akoko", "Isua-Akoko", "Supare", "Ise-Akoko", "Emure-Ile", "Idanre", "Ifon", "Ute", "Ode-Irele", "Arigidi"]
+  },
+  {
+    "state": "Osun",
+    "capital": "Osogbo",
+    "cities": ["Osogbo", "Ile-Ife", "Ilesa", "Ede", "Iwo", "Ikirun", "Ila-Orangun", "Ejigbo", "Ipetumodu", "Modakeke", "Apomu", "Gbongan", "Iree", "Oke-Ila", "Okuku", "Inisa", "Ijebu-Jesa", "Esa-Oke", "Erin-Osun", "Ifetedo", "Ibokun", "Otan-Ayegbaju"]
+  },
+  {
+    "state": "Oyo",
+    "capital": "Ibadan",
+    "cities": ["Ibadan", "Ogbomoso", "Oyo", "Iseyin", "Saki", "Kisi", "Igboho", "Eruwa", "Igbo-Ora", "Lanlate", "Awe", "Fiditi", "Lalupon", "Moniya", "Apata", "Bodija", "Challenge", "Iwo Road", "Okeho", "Ago-Amodu", "Tede", "Iganna", "Otu", "Ilora"]
+  },
+  {
+    "state": "Plateau",
+    "capital": "Jos",
+    "cities": ["Jos", "Bukuru", "Barkin Ladi", "Vom", "Pankshin", "Shendam", "Langtang", "Wase", "Mangu", "Bokkos", "Bassa", "Riyom", "Kanam", "Kanke", "Mikang", "Qua'an Pan", "Jos East", "Jos North", "Jos South"]
+  },
+  {
+    "state": "Rivers",
+    "capital": "Port Harcourt",
+    "cities": ["Port Harcourt", "Bonny", "Okrika", "Eleme", "Omoku", "Ahoada", "Bori", "Degema", "Buguma", "Opobo", "Andoni", "Gokana", "Khana", "Tai", "Oyigbo", "Ikwerre", "Emohua", "Etche", "Abua/Odual", "Akuku-Toru", "Asari-Toru", "Ogba/Egbema/Ndoni", "Ogu/Bolo", "Onelga"]
+  },
+  {
+    "state": "Sokoto",
+    "capital": "Sokoto",
+    "cities": ["Sokoto", "Tambuwal", "Gwadabawa", "Illela", "Wurno", "Rabah", "Dange-Shuni", "Gada", "Goronyo", "Gudu", "Isa", "Kebbe", "Kware", "Sabon Birni", "Shagari", "Silame", "Tangaza", "Tureta", "Wamako", "Yabo", "Binji", "Bodinga"]
+  },
+  {
+    "state": "Taraba",
+    "capital": "Jalingo",
+    "cities": ["Jalingo", "Wukari", "Bali", "Serti", "Takum", "Donga", "Ibi", "Baissa", "Gembu", "Mutum-Biyu", "Zing", "Yorro", "Lau", "Ardo-Kola", "Kurmi", "Ussa", "Karim Lamido", "Gashaka", "Gassol"]
+  },
+  {
+    "state": "Yobe",
+    "capital": "Damaturu",
+    "cities": ["Damaturu", "Potiskum", "Gashua", "Nguru", "Geidam", "Buni Yadi", "Bade", "Fika", "Fune", "Gujba", "Gulani", "Jakusko", "Karasuwa", "Machina", "Nangere", "Tarmuwa", "Yusufari", "Yunusari", "Bursari"]
+  },
+  {
+    "state": "Zamfara",
+    "capital": "Gusau",
+    "cities": ["Gusau", "Kaura Namoda", "Talata Mafara", "Anka", "Bungudu", "Maru", "Zurmi", "Shinkafi", "Bukkuyum", "Bakura", "Birnin Magaji", "Gummi", "Maradun", "Tsafe", "Dansadau"]
+  }
+]

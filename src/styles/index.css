@@ -1,0 +1,195 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: light;
+  }
+
+  * {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-mint-50 font-sans text-charcoal antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  ::selection {
+    @apply bg-lime text-midnight-900;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    @apply font-display tracking-[-0.03em];
+  }
+
+  :focus-visible {
+    @apply outline-none ring-2 ring-lime-500 ring-offset-2 ring-offset-white;
+  }
+
+  input,
+  select,
+  textarea {
+    font-family: inherit;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.001ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.001ms !important;
+    }
+  }
+}
+
+@layer components {
+  .container-page {
+    @apply mx-auto w-full max-w-[1240px] px-5 sm:px-8 lg:px-10;
+  }
+
+  .display-xl {
+    @apply font-display text-[2.75rem] font-semibold leading-[0.98] tracking-[-0.04em] sm:text-6xl lg:text-[4.75rem];
+  }
+
+  .display-lg {
+    @apply font-display text-4xl font-semibold leading-[1.02] tracking-[-0.035em] sm:text-5xl lg:text-6xl;
+  }
+
+  .display-md {
+    @apply font-display text-3xl font-semibold leading-[1.05] tracking-[-0.03em] sm:text-4xl;
+  }
+
+  .eyebrow {
+    @apply inline-flex items-center gap-2 font-mono text-[11px] font-medium uppercase tracking-[0.22em];
+  }
+
+  .glass {
+    @apply border border-white/15 bg-white/10 backdrop-blur-xl;
+  }
+
+  .glass-dark {
+    @apply border border-white/10 bg-midnight-900/60 backdrop-blur-xl;
+  }
+
+  .card-surface {
+    @apply rounded-3xl border border-midnight-900/[0.06] bg-white shadow-card;
+  }
+
+  .input-base {
+    @apply w-full rounded-xl border border-charcoal-200 bg-white px-4 py-3 font-sans text-sm text-charcoal-900 placeholder:text-muted focus:border-midnight-900 focus:ring-2 focus:ring-lime/60;
+  }
+
+  .label-base {
+    @apply mb-1.5 block text-[13px] font-semibold text-charcoal-800;
+  }
+
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .hide-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .text-pretty {
+    text-wrap: pretty;
+  }
+}
+
+@layer utilities {
+  .mask-fade-x {
+    mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
+  }
+
+  .dotted-grid {
+    background-image: radial-gradient(rgba(7, 27, 34, 0.12) 1px, transparent 1px);
+    background-size: 22px 22px;
+  }
+
+  .noise {
+    position: relative;
+  }
+
+  .noise::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    opacity: 0.025;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+}
+
+/* MapLibre */
+.maplibregl-popup-content {
+  border-radius: 18px !important;
+  padding: 0 !important;
+  overflow: hidden;
+  box-shadow: 0 24px 60px -20px rgba(7, 27, 34, 0.35) !important;
+}
+
+.maplibregl-popup-close-button {
+  font-size: 20px;
+  padding: 2px 8px;
+  color: #071b22;
+}
+
+.maplibregl-ctrl-group {
+  border-radius: 12px !important;
+  overflow: hidden;
+}
+
+.ev-marker {
+  width: 38px;
+  height: 38px;
+  display: grid;
+  place-items: center;
+  border-radius: 12px;
+  background: #c6f36a;
+  border: 2px solid #071b22;
+  box-shadow: 0 8px 20px rgba(7, 27, 34, 0.3);
+  cursor: pointer;
+  transition: transform 0.18s ease;
+  color: #071b22;
+}
+
+.ev-marker:hover {
+  transform: scale(1.1) translateY(-2px);
+}
+
+.ev-marker.is-selected {
+  background: #071b22;
+  color: #c6f36a;
+  border-color: #c6f36a;
+}
+
+.recharts-cartesian-axis-tick-value {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  fill: #829194;
+}
+
+.recharts-default-tooltip {
+  border-radius: 14px !important;
+  border: 1px solid rgba(7, 27, 34, 0.08) !important;
+  box-shadow: 0 12px 32px -12px rgba(7, 27, 34, 0.2) !important;
+}
