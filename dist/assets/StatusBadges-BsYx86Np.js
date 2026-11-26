@@ -1,0 +1,1 @@
+import{j as o}from"./react-z699G0pt.js";import{B as t}from"./Badge-EX9OuYgk.js";import{t as e,aQ as a}from"./index-7ZrjcjAV.js";function u({status:n}){return o.jsx(t,{tone:a(n),children:e(n)})}function m({status:n}){return o.jsx(t,{tone:a(n),children:e(n)})}function d({status:n}){return o.jsx(t,{tone:a(n),children:e(n)})}export{u as B,m as P,d as a};

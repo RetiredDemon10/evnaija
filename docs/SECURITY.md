@@ -92,7 +92,8 @@ Migration `20260101001200_waitlist_and_recurring.sql` adds two tables and six fu
 - **Map provider.** `connect-src` whitelists MapTiler, OpenFreeMap, CARTO and OpenStreetMap. If `VITE_MAPS_STYLE_URL` points at another host, add that host to `connect-src` and (for raster tiles) `img-src`, or the map will render blank.
 - **Supabase.** `connect-src` uses `https://*.supabase.co` and `wss://*.supabase.co`. A custom domain or self-hosted Supabase needs to be added explicitly.
 - **Paystack.** `script-src`, `frame-src` and `connect-src` include Paystack checkout hosts. If you enable a new Paystack product, re-check its required origins.
-- **`style-src 'unsafe-inline'`** is required by MapLibre and React inline styles. It does not permit inline scripts.
+- **Smartsupp live chat.** The bootstrap is served locally from `/smartsupp.js`, so the strict CSP does not need `unsafe-inline` for scripts. `script-src`, `connect-src`, `frame-src`, `style-src` and `font-src` allow Smartsupp's documented origins (`*.smartsupp.com`, `*.smartsuppchat.com`, `*.smartsuppcdn.com`, plus `wss://*.smartsupp.com` for the socket). Camera and microphone remain disabled by the permissions policy, so Smartsupp video/call features are intentionally unavailable. The widget is disclosed as a support-only processor in the Privacy and Cookie policies; do not attach analytics, advertising or session replay to it.
+- **`style-src 'unsafe-inline'`** is required by MapLibre, React inline styles and the Smartsupp widget. It does not permit inline scripts.
 - Test CSP in report-only mode first if you change the map or payment provider.
 
 ## 6. Progressive Web App and notifications

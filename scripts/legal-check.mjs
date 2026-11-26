@@ -70,6 +70,7 @@ const requiredCopy = [
   ['VAT', 'Terms must disclose that prices include VAT'],
   ['No system is perfectly secure', 'Privacy Policy must include a security caveat'],
   ['NDPC', 'Privacy Policy must name the regulator'],
+  ['Smartsupp', 'Privacy/Cookie policy must disclose the live chat provider'],
 ]
 for (const [needle, message] of requiredCopy) {
   if (!legalPage.includes(needle)) failures.push(message)

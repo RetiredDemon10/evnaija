@@ -95,20 +95,21 @@ const DOCS: Record<LegalDocSlug, Doc> = {
           'Booking and payment data: station, charger, time slot, amounts, VAT, payment status and Paystack transaction references. Paystack processes card data; we receive references, channel and status, not full card numbers.',
           'Service-request data: the name, email, phone, vehicle and fault description you choose to share with a mechanic. For anonymous requests, the abuse-prevention record stores only a one-way hash of the email and expires after one hour; the request itself contains the contact details you submitted so the mechanic can reply.',
           'Technical data: device and browser information, IP address and usage events needed to secure and improve the service. Local preferences such as sidebar state stay on your device.',
+          'Support chat data: if you use the Smartsupp live chat widget, your messages, any contact details you provide in chat, and session metadata such as the page you were on, browser type and approximate location derived from IP are processed so our support team can reply and keep a record of the conversation.',
         ],
       },
       {
         heading: 'How we use it',
         body: [
-          'To create and secure accounts, process bookings and payments, verify operators and mechanics, match drivers with mechanics, calculate fees and settlements, provide support, prevent fraud, send transactional notifications and improve the product.',
-          'We do not sell personal data. We share only what is necessary with Paystack, hosting and email delivery providers, and — for a specific booking or service request — the relevant operator or mechanic. Marketing messages are sent only where you have opted in, and every message includes an opt-out.',
+          'To create and secure accounts, process bookings and payments, verify operators and mechanics, match drivers with mechanics, calculate fees and settlements, provide support through our live chat and support inbox, prevent fraud, send transactional notifications and improve the product.',
+          'We do not sell personal data. We share only what is necessary with Paystack, Smartsupp (live chat support), hosting and email delivery providers, and — for a specific booking or service request — the relevant operator or mechanic. Marketing messages are sent only where you have opted in, and every message includes an opt-out.',
         ],
       },
       {
         heading: 'Legal bases and retention',
         body: [
           'We rely on the Nigeria Data Protection Act 2023 and the Nigeria Data Protection Regulation 2019. Processing is based on performing our contract with you, complying with legal obligations, protecting legitimate interests such as fraud prevention and platform security, and consent where required.',
-          'Financial and tax records are kept for the statutory period required by Nigerian tax and accounting law. Account data is kept while your account is active and for a reasonable period afterwards. Service requests are kept while active and for a reasonable dispute period. Abuse-prevention hashes are kept for one hour. When data is no longer needed, it is deleted or anonymised.',
+          'Financial and tax records are kept for the statutory period required by Nigerian tax and accounting law. Account data is kept while your account is active and for a reasonable period afterwards. Service requests are kept while active and for a reasonable dispute period. Live chat transcripts are kept only for a reasonable support and dispute period. Abuse-prevention hashes are kept for one hour. When data is no longer needed, it is deleted or anonymised.',
         ],
       },
       {
@@ -129,7 +130,7 @@ const DOCS: Record<LegalDocSlug, Doc> = {
       {
         heading: 'Transfers and contact',
         body: [
-          'Some service providers may process data outside Nigeria. Where they do, we use contractual and technical safeguards appropriate to the transfer and applicable Nigerian law.',
+          'Some service providers, including hosting, email delivery, Paystack and Smartsupp, may process data outside Nigeria. Where they do, we use contractual and technical safeguards appropriate to the transfer and applicable Nigerian law.',
           `The data controller is ${LEGAL_ENTITY.name}${LEGAL_ENTITY.registrationNumber ? ` (${LEGAL_ENTITY.registrationNumber})` : ''}, ${BRAND.address}. Data protection enquiries: ${LEGAL_ENTITY.dpoEmail}.`,
         ],
       },
@@ -227,7 +228,7 @@ const DOCS: Record<LegalDocSlug, Doc> = {
     title: 'Cookie Policy',
     icon: ShieldCheck,
     intro:
-      'EV Naija uses a small number of cookies and similar storage technologies to keep you signed in, secure the service and remember local preferences.',
+      'EV Naija uses a small number of cookies and similar storage technologies to keep you signed in, secure the service, remember local preferences and operate our support live chat.',
     sections: [
       {
         heading: 'Essential cookies',
@@ -243,15 +244,16 @@ const DOCS: Record<LegalDocSlug, Doc> = {
         ],
       },
       {
-        heading: 'Analytics and advertising',
+        heading: 'Support chat, analytics and advertising',
         body: [
+          'Smartsupp may set a session cookie or local-storage entry to keep the live chat widget working, remember your conversation and recognise repeat visitors to the same chat. This storage is used only to deliver support. We do not use Smartsupp for analytics, advertising, cross-site tracking or profiling, and we do not sell chat data.',
           'This build does not set analytics, advertising or cross-site tracking cookies, and we do not sell cookie data. If we introduce non-essential tracking in future, we will update this policy and ask for your consent before setting it.',
         ],
       },
       {
         heading: 'Managing cookies',
         body: [
-          'You can clear or block cookies in your browser settings. Blocking essential cookies will prevent sign-in and booking. Third-party payment pages are governed by Paystack’s own cookie policy.',
+          'You can clear or block cookies in your browser settings. Blocking essential cookies will prevent sign-in and booking; blocking Smartsupp storage may stop the live chat widget from remembering your conversation. The chat widget is operated by Smartsupp under its own privacy notice, and third-party payment pages are governed by Paystack’s own cookie policy.',
           `Questions about this policy? Contact ${BRAND.supportEmail}.`,
         ],
       },

@@ -49,7 +49,7 @@ EV Naija processes personal data, so a privacy programme is mandatory, not optio
 7. **Prepare a breach response plan:** detect → contain → assess risk → notify the NDPC and affected people within the applicable statutory deadline → record the incident. The repository already writes admin audit events; keep an off-platform incident register too.
 8. **Control marketing:** only send marketing to people who opted in, identify yourself in every message, and honour opt-out immediately. Transactional booking/payment/security messages are separate and do not require marketing consent.
 9. **Handle children's data:** the Terms require users to be 18+. Do not knowingly collect data from minors; if discovered, delete it and escalate to the DPO.
-10. **Cross-border transfers:** list every processor that may store/process data outside Nigeria (hosting, Supabase, email, Paystack) and record the safeguards. Your lawyer should confirm the required transfer mechanism under current Nigerian law.
+10. **Cross-border transfers:** list every processor that may store/process data outside Nigeria (hosting, Supabase, email, Paystack and Smartsupp live chat) and record the safeguards. Your lawyer should confirm the required transfer mechanism under current Nigerian law.
 
 ---
 
@@ -63,7 +63,7 @@ The app ships five documents at `/legal/*`:
 | Privacy Policy | Data categories, purposes, legal bases, retention, security, rights, transfers, DPO |
 | Refund Policy | Cancellation windows, station failure, no-shows, Paystack settlement times, disputes, mechanic requests |
 | Cancellation Policy | How to cancel, timing/charges, recurring plans, operator cancellation |
-| Cookie Policy | Essential auth/storage, local preferences, no analytics/advertising cookies today |
+| Cookie Policy | Essential auth/storage, local preferences, Smartsupp live-chat session storage, no analytics/advertising cookies today |
 
 Operational rules:
 
@@ -131,7 +131,7 @@ This is the highest-risk area legally because you are introducing third parties 
 - Never sell or rent personal data. The Privacy Policy promises this — do not contradict it with a growth tool.
 - Every marketing message must identify EV Naija, explain why the recipient is receiving it and provide a working unsubscribe. Honour opt-outs across email and SMS.
 - Transactional messages (receipts, QR codes, booking changes, security alerts, service-request confirmations) are allowed without marketing consent; keep them free of promotional content.
-- If you add analytics, advertising pixels, session replay or any non-essential cookie, update `/legal/cookies`, obtain consent first, and re-run `npm run legal:check`. The current build intentionally sets none.
+- If you add analytics, advertising pixels, session replay or any other non-essential cookie, update `/legal/cookies`, obtain consent first, and re-run `npm run legal:check`. The Smartsupp live chat widget is support functionality and is already disclosed; do not repurpose its storage for analytics or advertising. The build still sets no analytics or advertising cookies.
 
 ---
 
@@ -144,8 +144,9 @@ This is the highest-risk area legally because you are introducing third parties 
 | Guest checkout | Per-booking secure link, SHA-256 hashed token storage, server-side rate limits, explicit policy acceptance |
 | Booking lookup | Reference + token/email, rate-limited server-side RPC |
 | Mechanic requests | Anonymous submission via rate-limited RPC; one-hour email hash for abuse prevention; no payment taken |
+| Support chat | Smartsupp loaded from a local bootstrap file; support-only, disclosed in Privacy/Cookie policies; no analytics or advertising use |
 | Admin actions | `admin_audit_logs` for mechanic moderation, refunds and other privileged changes |
-| Transport/browser | HTTPS/HSTS, strict CSP, `nosniff`, frame denial, referrer and permissions policies in `vercel.json` / `netlify.toml` |
+| Transport/browser | HTTPS/HSTS, strict CSP with explicit Paystack, map, Supabase and Smartsupp allowlists, `nosniff`, frame denial, referrer and permissions policies in `vercel.json` / `netlify.toml` |
 | Secrets | Only Supabase URL/anon key and Paystack public key in the browser; service-role and secret keys in Edge Functions |
 | Legal UI | Five published policies, acceptance gates at all four collection points, canonical document list |
 
@@ -170,6 +171,7 @@ Then deploy and verify on the live domain:
 - [ ] Signup, operator signup, mechanic registration and guest checkout all require policy acceptance.
 - [ ] Paystack is in test mode for verification, then switched to live only after sign-off.
 - [ ] DPO email and support inbox are monitored.
+- [ ] Smartsupp account is active, its DPA/subprocessors are reviewed, and the chat widget loads without CSP errors.
 - [ ] Lawyer has reviewed and signed off the policies and mechanic agreement.
 - [ ] Tax adviser has confirmed VAT, receipts, payouts and record retention.
 - [ ] Insurance certificates for the platform and listed mechanics are on file.
@@ -201,6 +203,7 @@ Then deploy and verify on the live domain:
 - Transaction, refund, payout and tax filing records
 - Audit log exports for privileged admin actions
 - Legal counsel and tax adviser sign-off notes
+- Processor DPAs and subprocessor lists, including Smartsupp for live chat
 
 ---
 
